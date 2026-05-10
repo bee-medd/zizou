@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:file_picker/file_picker.dart';
 import 'dart:io';
-import '../../data\providers\pdf_processor.dart';
+import '../../data/providers/pdf_processor.dart';
 
 class PdfUploadPage extends StatefulWidget {
   const PdfUploadPage({super.key});

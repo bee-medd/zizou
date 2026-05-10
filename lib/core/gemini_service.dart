@@ -1,5 +1,5 @@
 import 'package:google_generative_ai/google_generative_ai.dart';
-import 'database_helper.dart';
+import '../data/providers/database_helper.dart';
 
 class GeminiService {
   final String apiKey;

@@ -1,6 +1,5 @@
 import 'dart:io';
 import 'package:syncfusion_flutter_pdf/pdf.dart';
-import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart' as p;
 import '../models/pdf_chunk.dart';
 import 'database_helper.dart';
@@ -14,7 +13,6 @@ class PdfProcessor {
     final String fileName = p.basename(file.path);
 
     for (int i = 0; i < document.pages.count; i++) {
-      final PdfPage page = document.pages[i];
       
       // Extract Text
       String text = PdfTextExtractor(document).extractText(startPageIndex: i, endPageIndex: i);

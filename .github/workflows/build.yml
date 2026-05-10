@@ -19,6 +19,9 @@ jobs:
           flutter-version: '3.19.0'
           channel: 'stable'
 
+      - name: Initialize Project
+        run: flutter create .
+
       - name: Get dependencies
         run: flutter pub get
 
